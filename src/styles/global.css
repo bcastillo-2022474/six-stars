@@ -1,0 +1,15 @@
+.bg-gradient-black-purple {
+    @apply bg-gradient-to-tl to-black from-purple-black
+}
+
+.hover\:bg-gradient-black-purple:hover {
+    @apply bg-gradient-to-tl to-purple-black from-black
+}
+
+.text-gradient-black-purple {
+    @apply bg-gradient-to-tl to-gray-100 from-purple-black bg-clip-text text-transparent
+}
+
+.hover\:text-gradient-black-purple:hover {
+    @apply bg-gradient-to-tl to-purple-black from-gray-100 bg-clip-text text-transparent
+}

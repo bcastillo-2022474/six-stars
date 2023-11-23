@@ -1,0 +1,72 @@
+---
+import "../styles/global.css"
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout classlist="min-h-screen flex flex-col bg-white" title="Welcome to Astro.">
+    <Navbar></Navbar>
+    <section
+            class="h-screen flex p-5 sm:p-10 flex-col lg:flex-row items-center justify-center grow lg:p-36 gap-10 lg:justify-between w-full">
+        <div class="lg:w-3/5 flex flex-col gap-5">
+            <h1 class="text-6xl font-bold ">Expertos en Enderezado y Pintura Automotriz</h1>
+            <p>
+                Invertimos en la calidad y la satisfacción del cliente. Ya sea que necesites reparar pequeños daños o
+                realizar una restauración completa, en Six Stars estamos aquí para hacer que tu experiencia
+                sea sin complicaciones y que tu vehículo vuelva a lucir como nuevo.
+            </p>
+            <div class="flex gap-5">
+                <button class="bg-black rounded px-3 py-2 hover:bg-gradient-black-purple text-white">
+                    Nuestros Servicios
+                </button>
+                <button class="border rounded px-3 py-2 hover:bg-gradient-black-purple hover:text-white">
+                    Contáctanos
+                </button>
+            </div>
+        </div>
+        <div class="w-9/12 md:w-4/6 lg:w-2/5">
+            <img src="/public/chevrolte-black-removebg-preview.png "
+                 alt="logo Six Star">
+        </div>
+    </section>
+    <section class="min-h-screen bg-[#F3F4F6] p-5">
+        <h2 class="text-5xl font-semibold text-center mb-5">Nuestros Trabajos</h2>
+        <div class="flex gap-32 justify-center p-5">
+            <div class="rounded bg-gray-300 w-[500px] h-[350px]"></div>
+            <div class="rounded bg-gray-300 w-[500px] h-[350px]"></div>
+        </div>
+        <div class="flex gap-32 justify-center p-5">
+            <div class="rounded bg-gray-300 w-[500px] h-[350px]"></div>
+            <div class="rounded bg-gray-300 w-[500px] h-[350px]"></div>
+        </div>
+    </section>
+    <section class="py-5 min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-5xl font-semibold text-center mb-5">Testimonios</h2>
+        <div class="flex p-5 gap-5 max-w-[1200px] w-full mx-auto">
+            <article class="border rounded p-5 w-1/3 flex flex-col gap-5">
+                <div>"</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut delectus
+                    doloremque ea exercitationem iusto maiores minus, mollitia nisi numquam officia, possimus, quaerat
+                    repellendus vitae voluptatem. Delectus dicta fugit impedit ipsam iure odit perspiciatis porro
+                    possimus.
+                    Accusamus commodi consequatur distinctio error natus possimus quam quidem reprehenderit temporibus
+                    veniam.
+                </p>
+                <div class="flex gap-5 items-center">
+                    <div class="rounded-full border w-[50px] h-[50px] flex justify-center overflow-hidden">
+                        <img class="object-contain w-[50px]" src="/public/chevrolte-black-removebg-preview.png"
+                             alt="user image">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Nombre del usuario</h3>
+                        <p>Empresa</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <Footer></Footer>
+</Layout>
